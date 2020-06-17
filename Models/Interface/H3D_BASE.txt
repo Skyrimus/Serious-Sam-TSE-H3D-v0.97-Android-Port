@@ -1,0 +1,629 @@
+H3D_1x1.mdl
+000_ICOHLT         = Icon Health
+X: -1.18235        H: 107
+Y: -0.563236       P: 347
+Z:  1.0366         B:   2
+
+H3D_1x1.mdl
+001_DGTHLT100      = Digit Health 100
+X: -1.21045        H: 107
+Y: -0.560048       P: 347
+Z:  0.947219       B:   2
+
+H3D_1x1.mdl
+002_DGTHLT010      = Digit Health 010
+X: -1.23386        H: 107
+Y: -0.557391       P: 347
+Z:  0.872732       B:   2
+
+H3D_1x1.mdl
+003_DGTHLT001      = Digit Health 001
+X: -1.25728        H: 107
+Y: -0.554735       P: 347
+Z:  0.798245       B:   2
+
+H3D_1x1.mdl
+004_ICOARR         = Icon Armor
+X: -1.21383        H: 107
+Y: -0.405924       P: 347
+Z:  1.05233        B:   1.5
+
+H3D_1x1.mdl
+005_DGTARR100      = Digit Armor 100
+X: -1.24176        H: 107
+Y: -0.403532       P: 347
+Z:  0.962869       B:   1.5
+
+H3D_1x1.mdl
+006_DGTARR010      = Digit Armor 010
+X: -1.26503        H: 107
+Y: -0.40154        P: 347
+Z:  0.888318       B:   1.5
+
+H3D_1x1.mdl
+007_DGTARR001      = Digit Armor 001
+X: -1.2883         H: 107
+Y: -0.399547       P: 347
+Z:  0.813767       B:   1.5
+
+H3D_06x06.mdl
+008_ICOSCR         = Icon Score
+X: -1.18687        H:  97
+Y:  0.589072       P:  13
+Z:  1.05204        B: 354
+
+H3D_06x06.mdl
+009_DGTSCR100000   = Digit Score 100000
+X: -1.1959         H:  97
+Y:  0.582706       P:  13
+Z:  0.990526       B: 354
+
+H3D_06x06.mdl
+010_DGTSCR010000   = Digit Score 010000
+X: -1.20268        H:  97
+Y:  0.577933       P:  13
+Z:  0.94439        B: 354
+
+H3D_06x06.mdl
+011_DGTSCR001000   = Digit Score 001000
+X: -1.20945        H:  97
+Y:  0.573158       P:  13
+Z:  0.898253       B: 354
+
+H3D_06x06.mdl
+012_DGTSCR000100   = Digit Score 000100
+X: -1.21623        H:  97
+Y:  0.568384       P:  13
+Z:  0.852116       B: 354
+
+H3D_06x06.mdl
+013_DGTSCR000010   = Digit Score 000010
+X: -1.223          H:  97
+Y:  0.56361        P:  13
+Z:  0.80598        B: 354
+
+H3D_06x06.mdl
+014_DGTSCR000001   = Digit Score 000001
+X: -1.22978        H:  97
+Y:  0.558835       P:  13
+Z:  0.759843       B: 354
+
+H3D_06x06.mdl
+015_ICOSKL         = Icon Skull
+X: -1.20649        H:  97
+Y:  0.498225       P:  13
+Z:  1.06432        B: 354
+
+H3D_06x06.mdl
+016_DGTDTH100000   = Digit Death 100000
+X: -1.21552        H:  97
+Y:  0.491859       P:  13
+Z:  1.00281        B: 354
+
+H3D_06x06.mdl
+017_DGTDTH010000   = Digit Death 010000
+X: -1.2223         H:  97
+Y:  0.487086       P:  13
+Z:  0.956674       B: 354
+
+H3D_06x06.mdl
+018_DGTDTH001000   = Digit Death 001000
+X: -1.22908        H:  97
+Y:  0.482313       P:  13
+Z:  0.910533       B: 354
+
+H3D_06x06.mdl
+019_DGTDTH000100   = Digit Death 000100
+X: -1.23585        H:  97
+Y:  0.477537       P:  13
+Z:  0.864399       B: 354
+
+H3D_06x06.mdl
+020_DGTDTH000010   = Digit Death 000010
+X: -1.24263        H:  97
+Y:  0.472763       P:  13
+Z:  0.818262       B: 354
+
+H3D_06x06.mdl
+021_DGTDTH000001   = Digit Death 000001
+X: -1.2494         H:  97
+Y:  0.467989       P:  13
+Z:  0.772124       B: 354
+
+H3D_06x06.mdl
+022_ICOPWRUPSD     = Icon PowerUp SeriosDamage
+X: -1.23779        H: 107 
+Y: -0.209406       P: 347
+Z:  1.07734        B:   0  
+
+H3D_06x06.mdl
+023_DGTPWRUPSD10   = Digit PowerUp SeriosDamage10
+X: -1.25606        H: 107
+Y: -0.209407       P: 347
+Z:  1.01757        B:   0  
+
+H3D_06x06.mdl
+024_DGTPWRUPSD01   = Digit PowerUp SeriosDamage01
+X: -1.26976        H: 107
+Y: -0.209407       P: 347
+Z:  0.972738       B:   0 
+
+H3D_06x06.mdl
+025_ICOPWRUPIU     = Icon PowerUp Invulnerability
+X: -1.29261        H: 107
+Y: -0.209407       P: 347
+Z:  0.898027       B:   0
+
+H3D_06x06.mdl
+026_DGTPWRUPIU10   = Digit PowerUp Invulnerability10
+X: -1.31088        H: 107
+Y: -0.209406       P: 347
+Z:  0.838257       B:   0
+
+H3D_06x06.mdl
+027_DGTPWRUPIU01   = Digit PowerUp Invulnerability01
+X: -1.32459        H: 107
+Y: -0.209407       P: 347
+Z:  0.793431       B:   0
+
+H3D_06x06.mdl
+028_ICOPWRUPSS     = Icon PowerUp SeriousSpeed
+X: -1.22098        H: 107
+Y: -0.28553        P: 347
+Z:  1.0722         B:   0
+
+H3D_06x06.mdl
+029_DGTPWRUPSS10   = Digit PowerUp SeriousSpeed10
+X: -1.23924        H: 107
+Y: -0.285528       P: 347
+Z:  1.01243        B:   0
+
+H3D_06x06.mdl
+030_DGTPWRUPSS01   = Digit PowerUp SeriousSpeed01
+X: -1.25296        H: 107
+Y: -0.28553        P: 347
+Z:  0.9676         B:   0
+
+H3D_06x06.mdl
+031_ICOPWRUPIS     = Icon PowerUp Invisibility
+X: -1.2758         H: 107
+Y: -0.285529       P: 347
+Z:  0.892889       B:   0
+
+H3D_06x06.mdl
+032_DGTPWRUPIS10   = Digit PowerUp Invisibility10
+X: -1.29407        H: 107
+Y: -0.285529       P: 347
+Z:  0.833119       B:   0
+
+H3D_06x06.mdl
+033_DGTPWRUPIS01   = Digit PowerUp Invisibility01
+X: -1.30778        H: 107
+Y: -0.285529       P: 347
+Z:  0.788292       B:   0
+
+H3D_1x1.mdl
+034_DGTCURAMM100   = Digit CurrentAmmo 100
+X: -1.21915        H:  90
+Y: -0.51211        P: 347
+Z:  0.078125       B:   0
+
+H3D_1x1.mdl
+035_DGTCURAMM010   = Digit CurrentAmmo 010
+X: -1.21915        H:  90
+Y: -0.51211        P: 347
+Z:  0              B:   0
+
+H3D_1x1.mdl
+036_DGTCURAMM001   = Digit CurrentAmmo 001
+X: -1.21915        H:  90
+Y: -0.51211        P: 347
+Z: -0.078125       B:   0
+
+H3D_06x06.mdl
+037_ICOMSG         = Icon Message / Icon Timer
+X: -1.20797        H: 83
+Y:  0.582567       P: 13
+Z: -1.05941        B: 6
+
+H3D_06x06.mdl
+038_DGTMSG100      = Digit Message 100
+X: -1.23056        H:  83
+Y:  0.566653       P:  13
+Z: -0.905626       B:   6
+
+H3D_06x06.mdl
+039_DGTMSG010      = Digit Message 010
+X: -1.22378        H:  83
+Y:  0.571427       P:  13
+Z: -0.951762       B:   6
+
+H3D_06x06.mdl
+040_DGTMSG001      = Digit Message 001
+X: -1.21701        H:  83
+Y:  0.576202       P:  13
+Z: -0.997898       B:   6
+
+H3D_06x06.mdl
+041_ICOBSSHLT      = Icon Boss Health
+X: -1.21915        H:  90
+Y:  0.527734       P:  13
+Z:  0.0781251      B:   0
+
+H3D_06x06.mdl
+042_DGTBSSHLT100   = Digit Boss Health 100
+X: -1.21915        H:  90
+Y:  0.527735       P:  13
+Z:  0.0156249      B:   0
+
+H3D_06x06.mdl
+043_DGTBSSHLT010   = Digit Boss Health 010
+X: -1.21915        H:  90
+Y:  0.527734       P:  13
+Z: -0.03125        B:   0
+
+H3D_06x06.mdl
+044_DGTBSSHLT001   = Digit Boss Health 001
+X: -1.21915        H:  90
+Y:  0.527734       P:  13
+Z: -0.078125       B:   0
+
+H3D_06x06.mdl
+045_ICOOXYGEN      = Icon Oxygen
+X: -1.23466        H:  90
+Y:  0.434519       P:  11
+Z:  0.046875       B:   0
+
+H3D_06x06.mdl
+046_DGTOXYGEN10    = Digit Oxygen 10
+X: -1.23466        H:  90
+Y:  0.434519       P:  11
+Z: -0.015625       B:   0
+
+H3D_06x06.mdl
+047_DGTOXYGEN01    = Digit Oxygen 01
+X: -1.23466        H:  90
+Y:  0.434519       P:  11
+Z: -0.0625         B:   0
+
+H3D_06x06.mdl
+048_ICOAMSHLL      = Icon Ammo Sheels
+X: -1.2552         H:  72
+Y: -0.547865       P: 347
+Z: -0.683019       B: 358
+
+H3D_06x06.mdl
+049_BARAMSHLL      = Bar Ammo Sheels
+X: -1.24038        H:  72
+Y: -0.549459       P: 347
+Z: -0.727459       B: 358
+
+H3D_1x1.mdl
+050_BRDAMSHLL      = Border Ammo Sheels
+X: -1.2552         H:  72
+Y: -0.547866       P: 347
+Z: -0.683019       B: 358
+
+H3D_06x06.mdl
+051_ICOAMBLLT      = Icon Ammo Bullets
+X: -1.27741        H:  72
+Y: -0.441358       P: 347
+Z: -0.694248       B: 358
+
+H3D_06x06.mdl
+052_BARAMBLLT      = Bar Ammo Bullets
+X: -1.26258        H:  72
+Y: -0.442952       P: 347
+Z: -0.738687       B: 358
+
+H3D_1x1.mdl
+053_BRDAMBLLT      = Border Ammo Bullets
+X: -1.27741        H:  72
+Y: -0.441359       P: 347
+Z: -0.694247       B: 358
+
+H3D_06x06.mdl
+054_ICOAMRCKT      = Icon Ammo Rockets
+X: -1.22061        H:  72
+Y: -0.551584       P: 347
+Z: -0.786712       B: 358
+
+H3D_06x06.mdl
+055_BARAMRCKT      = Bar Ammo Rockets
+X: -1.20578        H:  72
+Y: -0.553178       P: 347
+Z: -0.831152       B: 358
+
+H3D_1x1.mdl
+056_BRDAMRCKT      = Border Ammo Rockets
+X: -1.22061        H:  72
+Y: -0.551585       P: 347
+Z: -0.786712       B: 358
+
+H3D_06x06.mdl
+057_ICOAMGRND      = Icon Ammo Grenades
+X: -1.24282        H:  72
+Y: -0.445078       P: 347
+Z: -0.797941       B: 358
+
+H3D_06x06.mdl
+058_BARAMGRND      = Bar Ammo Grenades
+X: -1.22799        H:  72
+Y: -0.446672       P: 347
+Z: -0.842381       B: 358
+
+H3D_1x1.mdl
+059_BRDAMGRND      = Border Ammo Grenades
+X: -1.24282        H:  72
+Y: -0.445078       P: 347
+Z: -0.797941       B: 358
+
+H3D_06x06.mdl
+060_ICOAMFUEL      = Icon Ammo Fuel
+X: -1.18601        H:  72
+Y: -0.555304       P: 347
+Z: -0.890405       B: 358
+
+H3D_06x06.mdl
+061_BARAMFUEL      = Bar Ammo Fuel
+X: -1.17119        H:  72
+Y: -0.556898       P: 347
+Z: -0.934845       B: 358
+
+H3D_1x1.mdl
+062_BRDAMFUEL      = Border Ammo Fuel
+X: -1.18601        H:  72
+Y: -0.555304       P: 347
+Z: -0.890405       B: 358
+
+H3D_06x06.mdl
+063_ICOAMSPBL      = Icon Ammo Sniper Bullets
+X: -1.20822        H:  72
+Y: -0.448797       P: 347
+Z: -0.901634       B: 358
+
+H3D_06x06.mdl
+064_BARAMSPBL      = Bar Ammo Sniper Bullets
+X: -1.19339        H:  72
+Y: -0.450391       P: 347
+Z: -0.946074       B: 358
+
+H3D_1x1.mdl
+065_BRDAMSPBL      = Border Ammo Sniper Bullets
+X: -1.20822        H:  72
+Y: -0.448797       P: 347
+Z: -0.901634       B: 358
+
+H3D_06x06.mdl
+066_ICOAMELEC      = Icon Ammo Electricity
+X: -1.15142        H:  72
+Y: -0.559024       P: 347
+Z: -0.994098       B: 358
+
+H3D_06x06.mdl
+067_BARAMELEC      = Bar Ammo Electricity
+X: -1.13659        H:  72
+Y: -0.560617       P: 347
+Z: -1.03854        B: 358
+
+H3D_1x1.mdl
+068_BRDAMELEC      = Border Ammo Electricity
+X: -1.15142        H:  72
+Y: -0.559024       P: 347
+Z: -0.994098       B: 358
+
+H3D_06x06.mdl
+069_ICOAMIRBL      = Icon Ammo IronBalls
+X: -1.18811        H:  72
+Y: -0.456031       P: 347
+Z: -1.01003        B: 358
+
+H3D_06x06.mdl
+070_BARAMIRBL      = Bar Ammo IronBalls
+X: -1.1588         H:  72
+Y: -0.45411        P: 347
+Z: -1.04977        B: 358
+
+H3D_1x1.mdl
+071_BRDAMIRBL      = Border Ammo IronBalls
+X: -1.17363        H:  72
+Y: -0.452516       P: 347
+Z: -1.00533        B: 358
+
+H3D_06x06.mdl
+072_ICOAMSRBM      = Icon Ammo Serious Bomb
+X: -1.2898         H:  72
+Y: -0.544146       P: 347
+Z: -0.579326       B: 358
+
+H3D_06x06.mdl
+073_BARAMSRBM      = Bar Ammo Serious Bomb
+X: -1.27497        H:  72
+Y: -0.54574        P: 347
+Z: -0.623766       B: 358
+
+H3D_06x06.mdl
+074_ICOWPKNIF      = Icon Weapon Knife
+X: -1.25566        H:  94.5
+Y: -0.247523       P: 355
+Z:  0.372548       B:   0
+
+H3D_1x1.mdl
+075_BRDWPKNIF      = Border Weapon Knife
+X: -1.25566        H:  94.5
+Y: -0.247523       P: 355
+Z:  0.372548       B:   0
+
+H3D_06x06.mdl
+076_ICOWPCHSW      = Icon Weapon Chainsaw
+X: -1.24613        H:  94.5
+Y: -0.356481       P: 355
+Z:  0.372548       B:   0
+
+H3D_1x1.mdl
+077_BRDWPCHSW      = Border Weapon Chainsaw
+X: -1.24764        H:  93
+Y: -0.357675       P: 357
+Z:  0.373239       B:   0
+
+H3D_06x06.mdl
+078_ICOWPCOLT      = Icon Weapon Colt
+X: -1.2556         H:  93
+Y: -0.247519       P: 355
+Z:  0.264074       B:   0
+
+H3D_1x1.mdl
+079_BRDWPCOLT      = Border Weapon Colt
+X: -1.2556         H:  93
+Y: -0.247519       P: 355
+Z:  0.264074       B:   0
+
+H3D_06x06.mdl
+080_ICOWPDBCL      = Icon Weapon DoubleColt
+X: -1.24608        H:  93
+Y: -0.356476       P: 355
+Z:  0.263924       B:   0
+
+H3D_1x1.mdl
+081_BRDWPDBCL      = Border Weapon DoubleColt
+X: -1.24608        H:  93
+Y: -0.356476       P: 355
+Z:  0.263924       B:   0
+
+H3D_06x06.mdl
+082_ICOWPSHGN      = Icon Weapon Shotgun
+X: -1.25558        H:  91.5
+Y: -0.247516       P: 357
+Z:  0.155432       B:   0
+
+H3D_1x1.mdl
+083_BRDWPSHGN      = Border Weapon Shotgun
+X: -1.25558        H:  91.5
+Y: -0.247516       P: 357
+Z:  0.155432       B:   0
+
+H3D_06x06.mdl
+084_ICOWPDBSG      = Icon Weapon DoubleShotgun
+X: -1.24605        H:  91.5
+Y: -0.356474       P: 355
+Z:  0.155432       B:   0
+
+H3D_1x1.mdl
+085_BRDWPDBSG      = Border Weapon DoubleShotgun
+X: -1.24605        H:  91.5
+Y: -0.356474       P: 355
+Z:  0.155432       B:   0
+
+H3D_06x06.mdl
+086_ICOWPTMGN      = Icon Weapon Tommygun
+X: -1.25556        H:  90
+Y: -0.247515       P: 355
+Z:  0.0468749      B:   0
+
+H3D_1x1.mdl
+087_BRDWPTMGN      = Border Weapon Tommygun
+X: -1.25556        H:  90
+Y: -0.247515       P: 355
+Z:  0.0468749      B:   0
+
+H3D_06x06.mdl
+088_ICOWPMNGN      = Icon Weapon Minigun
+X: -1.24603        H:  90
+Y: -0.356473       P: 355
+Z:  0.0468751      B:   0
+
+H3D_1x1.mdl
+089_BRDWPMNGN      = Border Weapon Minigun
+X: -1.24603        H:  90
+Y: -0.356473       P: 355
+Z:  0.0468751      B:   0
+
+H3D_06x06.mdl
+090_ICOWPRKLN      = Icon Weapon RocketLauncher
+X: -1.25556        H:  90
+Y: -0.247515       P: 355
+Z: -0.0625         B:   0
+
+H3D_1x1.mdl
+091_BRDWPRKLN      = Border Weapon RocketLauncher
+X: -1.25556        H:  90
+Y: -0.247515       P: 355
+Z: -0.0625         B:   0
+
+H3D_06x06.mdl
+092_ICOWPGRLN      = Icon Weapon GrenadeLauncher
+X: -1.24603        H:  90
+Y: -0.356473       P: 355
+Z: -0.0625         B:   0
+
+H3D_1x1.mdl
+093_BRDWPGRLN      = Border Weapon GrenadeLauncher
+X: -1.24603        H:  90
+Y: -0.356473       P: 355
+Z: -0.0625         B:   0
+
+H3D_06x06.mdl
+094_ICOWPFLMR      = Icon Weapon Flamer
+X: -1.25558        H:  88.5
+Y: -0.247515       P: 355
+Z: -0.171056       B:   0
+
+H3D_1x1.mdl
+095_BRDWPFLMR      = Border Weapon Flamer
+X: -1.25558        H:  88.5
+Y: -0.247515       P: 355
+Z: -0.171056       B:   0
+
+H3D_06x06.mdl
+096_ICOWPSNPR      = Icon Weapon SniperRifle
+X: -1.24604        H:  88.5
+Y: -0.356473       P: 355
+Z: -0.171057       B:   0
+
+H3D_1x1.mdl
+097_BRDWPSNPR      = Border Weapon SniperRifle
+X: -1.24604        H:  88.5
+Y: -0.356473       P: 355
+Z: -0.171057       B:   0
+
+H3D_06x06.mdl
+098_ICOWPLSER      = Icon Weapon Laser
+X: -1.25561        H:  87
+Y: -0.247517       P: 355
+Z: -0.279615       B:   0
+
+H3D_1x1.mdl
+099_BRDWPLSER      = Border Weapon Laser
+X: -1.25561        H:  87
+Y: -0.247517       P: 355
+Z: -0.279615       B:   0
+
+H3D_06x06.mdl
+100_ICOWPCNON      = Icon Weapon Cannon
+X: -1.25566        H:  85.5
+Y: -0.247523       P: 357
+Z: -0.388173       B:   0
+
+H3D_1x1.mdl
+101_BRDWPCNON      = Border Weapon Cannon
+X: -1.25566        H:  85.5
+Y: -0.247523       P: 357
+Z: -0.388173       B:   0
+
+H3D_4x4.mdl
+102_BRDHLTH        = Signal Border Health
+X: -1.21982        H: 107
+Y: -0.558985       P: 347
+Z:  0.917424       B:   2
+
+H3D_4x4.mdl
+103_BRDARMR        = Signal Border Armor
+X: -1.25107        H: 107
+Y: -0.402735       P: 347
+Z:  0.933049       B:   1.5
+
+H3D_4x4.mdl
+104_BRDAMMO        = Signal Border Armor
+X: -1.21915        H:  90
+Y: -0.51211        P: 347
+Z:  0              B:   0
