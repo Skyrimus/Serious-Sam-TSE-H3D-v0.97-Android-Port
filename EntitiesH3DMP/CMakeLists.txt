@@ -173,4 +173,4 @@ target_compile_options(EntitiesH3DMP PUBLIC "-I${SE_CURRENT_GENERATED_DIR}")
 target_compile_options(EntitiesH3DMP PRIVATE "-I${SE_CURRENT_GENERATED_DIR}/StdH")
 
 target_link_libraries(EntitiesH3DMP Engine)
-target_compile_options(EntitiesH3DMP PUBLIC -Wpedantic)
+#target_compile_options(EntitiesH3DMP PUBLIC -Wpedantic)
