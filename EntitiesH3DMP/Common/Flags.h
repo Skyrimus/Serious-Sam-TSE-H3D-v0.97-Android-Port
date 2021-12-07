@@ -29,6 +29,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define ECBI_MODEL_HOLDER       (1UL<<6)
 #define ECBI_CORPSE_SOLID       (1UL<<7)
 #define ECBI_PLAYER             (1UL<<8)
+#define ECBI_ITEM_MONEY         (1UL<<9) //h3d
 
 // standard flag combinations:
 
@@ -64,6 +65,16 @@ with this program; if not, write to the Free Software Foundation, Inc.,
   ((ECBI_MODEL|ECBI_BRUSH)<<ECB_TEST) |\
   ((ECBI_MODEL)<<ECB_PASS) |\
   ((ECBI_ITEM)<<ECB_IS))
+
+// item
+#define ECF_MONEY_PASS ( \
+  ((ECBI_ITEM_MONEY)<<ECB_PASS))
+
+// item money * h3d
+#define ECF_ITEM_MONEY ( \
+  ((ECBI_MODEL|ECBI_BRUSH)<<ECB_TEST) |\
+  ((ECBI_MODEL)<<ECB_PASS) |\
+  ((ECBI_ITEM|ECBI_ITEM_MONEY)<<ECB_IS))
 
 // touch model
 #define ECF_TOUCHMODEL ( \

@@ -21,7 +21,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include "EntitiesH3DMP/Bullet.h"
 #include "EntitiesH3DMP/BackgroundViewer.h"
 #include "EntitiesH3DMP/SoundHolder.h"
-#include "GameMP/PlayerSettings.h"
+#include "GameH3DMP/PlayerSettings.h"
 #include "ModelsMP/Player/SeriousSam/Player.h"
 #include "ModelsMP/Player/SeriousSam/Body.h"
 #include "ModelsMP/Player/SeriousSam/Head.h"

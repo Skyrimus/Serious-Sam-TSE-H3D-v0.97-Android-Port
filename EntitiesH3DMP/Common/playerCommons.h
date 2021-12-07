@@ -41,13 +41,14 @@ struct PlayerControls {
     BOOL bWalk;
     BOOL bStrafe;
     BOOL bFire;
+    BOOL bShowTabInfo;
+    BOOL bDropMoney;
     BOOL bReload;
     BOOL bUse;
     BOOL bComputer;
     BOOL bUseOrComputer;
     BOOL bUseOrComputerLast;  // for internal use
     BOOL b3rdPersonView;
-    BOOL bShowTabInfo;
 
     BOOL bSniperZoomIn;
     BOOL bSniperZoomOut;

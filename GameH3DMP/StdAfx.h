@@ -15,21 +15,28 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 #include <Engine/StdH.h>
 #include <Engine/Engine.h>
-#include <GameH3DMP/SessionProperties.h>
-#include <GameH3DMP/PlayerSettings.h>
+#include <GameH3DMP/Game.h>
+#include <GameH3DMP/SEColors.h>
+#include <config.h>
 
 /* rcg10042001 protect against Visual C-isms. */
 #ifdef _MSC_VER
-#define DECL_DLL _declspec(dllexport)
+#define DECL_DLL _declspec(dllimport)
 #endif
 
 #ifdef PLATFORM_UNIX
 #define DECL_DLL 
 #endif
 
-#include "../Global.h"
-#include "../Common/Flags.h"
-#include "../Common/Common.h"
-#include "../Common/Particles.h"
-#include "../Common/EmanatingParticles.h"
-#include "../Common/GameInterface.h"
+#ifdef FIRST_ENCOUNTER
+  #include <Entities/Global.h>
+  #include <Entities/Common/Common.h>
+  #include <Entities/Common/GameInterface.h>
+  #include <Entities/Player.h>
+#else
+  #include <EntitiesMP/Global.h>
+  #include <EntitiesMP/Common/Common.h>
+  #include <EntitiesMP/Common/GameInterface.h>
+  #include <EntitiesMP/Player.h>
+#endif
+#undef DECL_DLL

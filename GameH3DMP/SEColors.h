@@ -13,23 +13,20 @@ You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. */
 
-#include <Engine/StdH.h>
-#include <Engine/Engine.h>
-#include <GameH3DMP/SessionProperties.h>
-#include <GameH3DMP/PlayerSettings.h>
+#ifndef __SECOLORS_H
+#define __SECOLORS_H 1
 
-/* rcg10042001 protect against Visual C-isms. */
-#ifdef _MSC_VER
-#define DECL_DLL _declspec(dllexport)
+#define SE_COL_ORANGE_LIGHT     0xffd70000
+#define SE_COL_ORANGE_NEUTRAL   0xee9c0000
+#define SE_COL_ORANGE_DARK      0x9b4b0000
+#define SE_COL_ORANGE_DARK_LT   0xbc6a0000
+#define SE_COL_BLUE_DARK_HV     0x151c2300
+#define SE_COL_BLUE_DARK        0x2a384600
+#define SE_COL_BLUE_DARK_LT     0x43596f00
+#define SE_COL_BLUE_NEUTRAL     0x5c7a9900
+#define SE_COL_BLUE_NEUTRAL_LT  0x6097cc00
+#define SE_COL_BLUE_LIGHT       0x64b4ff00
+#define SE_COL_BLUEGREEN_LT     0x6cff6c00
+#define SE_COL_WHITE            0xffffff00
+
 #endif
-
-#ifdef PLATFORM_UNIX
-#define DECL_DLL 
-#endif
-
-#include "../Global.h"
-#include "../Common/Flags.h"
-#include "../Common/Common.h"
-#include "../Common/Particles.h"
-#include "../Common/EmanatingParticles.h"
-#include "../Common/GameInterface.h"

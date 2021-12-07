@@ -8,14 +8,20 @@ uses "EntitiesH3DMP/Item";
 
 // money type 
 enum MoneyItemType {
-  0 MIT_COIN      "Coin",       // coin money
-  1 MIT_BAG     "Bag",      // bag money
-  2 MIT_CHEST    "Chest",     // chest moeny
+  0 MIT_COIN      "Coin",     // coin money
+  1 MIT_BAG       "Bag",      // bag money
+  2 MIT_CHEST     "Chest",    // chest moeny
+  3 MIT_CUSTOM    "DO NOT USE!",  // custom
 };
 
 // event for sending through receive item
 event EMoneyItem {
   INDEX iMoney,        // money to receive
+  BOOL  bPredictor,
+};
+event EMoneyItemInit {
+  INDEX iMoney,
+  MoneyItemType iMoneyType,
 };
 
 class CMoneyItem : CItem {
@@ -30,8 +36,8 @@ components:
   0 class   CLASS_BASE        "Classes\\Item.ecl",
 
 // ********* COIN MONEY *********
-  1 model   MODEL_COIN        "Models\\Items\\Money\\Coin\\Pill.mdl",
-  2 texture TEXTURE_COIN      "Models\\Items\\Money\\Coin\\Pill.tex",
+  1 model   MODEL_COIN        "Models\\Items\\Money\\Coin\\Coin.mdl",
+  2 texture TEXTURE_COIN      "Models\\Items\\Money\\Coin\\Coin.tex",
 
 // ********* BAG MONEY *********
  10 model   MODEL_BAG         "Models\\Items\\Money\\Bag\\Bag.mdl",
@@ -61,6 +67,7 @@ functions:
       case MIT_COIN:   PrecacheSound(SOUND_COIN  ); break;
       case MIT_BAG:  PrecacheSound(SOUND_BAG ); break;                                      
       case MIT_CHEST: PrecacheSound(SOUND_CHEST); break;
+      case MIT_CUSTOM: PrecacheSound(SOUND_BAG); break;
     }
   }
   /* Fill in entity statistics - for AI purposes only */
@@ -76,6 +83,7 @@ functions:
       case MIT_COIN:  pes->es_strName+=" coin";   break;
       case MIT_BAG: pes->es_strName+=" bag";  break;
       case MIT_CHEST:pes->es_strName+=" chest"; break;
+      case MIT_CUSTOM:pes->es_strName+=" custom"; break;
     }
 
     return TRUE;
@@ -91,13 +99,16 @@ functions:
 
     switch (m_EhitType) {
       case MIT_COIN:
-        Particles_Stardust(this, 0.9f*0.75f, 0.70f*0.75f, PT_STAR08, 32);
+        Particles_Stardust(this, 1.0f, 1.0f, PT_STAR08, 32);
         break;
       case MIT_BAG:
-        Particles_Stardust(this, 1.0f*0.75f, 0.75f*0.75f, PT_STAR08, 128);
+        Particles_Stardust(this, 1.5f, 1.0f, PT_STAR08, 128);
         break;
       case MIT_CHEST:
-        Particles_Stardust(this, 1.0f*0.75f, 0.75f*0.75f, PT_STAR08, 128);
+        Particles_Stardust(this, 1.5f, 1.0f, PT_STAR08, 128);
+        break;
+	  case MIT_CUSTOM:
+        Particles_Stardust(this, 1.0f, 1.0f, PT_STAR08, 128);
         break;
     }
   }
@@ -108,8 +119,8 @@ functions:
       case MIT_COIN:
         StartModelAnim(ITEMHOLDER_ANIM_SMALLOSCILATION, AOF_LOOPING|AOF_NORESTART);
         ForceCollisionBoxIndexChange(ITEMHOLDER_COLLISION_BOX_SMALL);
-        m_fValue = 500.0f;
-        m_fRespawnTime = (m_fCustomRespawnTime>0) ? m_fCustomRespawnTime : 10.0f; 
+        m_fValue = 5.0f;
+        m_fRespawnTime = (m_fCustomRespawnTime>0) ? m_fCustomRespawnTime : 20.0f; 
         m_strDescription.PrintF("Coin - M:%g  T:%g", m_fValue, m_fRespawnTime);
         // set appearance
         AddItem(MODEL_COIN, TEXTURE_COIN, 0, TEXTURE_SPECULAR_STRONG, 0);
@@ -121,26 +132,37 @@ functions:
       case MIT_BAG:
         StartModelAnim(ITEMHOLDER_ANIM_SMALLOSCILATION, AOF_LOOPING|AOF_NORESTART);
         ForceCollisionBoxIndexChange(ITEMHOLDER_COLLISION_BOX_MEDIUM);
-        m_fValue = 1000.0f;
-        m_fRespawnTime = (m_fCustomRespawnTime>0) ? m_fCustomRespawnTime : 10.0f; 
+        m_fValue = 10.0f;
+        m_fRespawnTime = (m_fCustomRespawnTime>0) ? m_fCustomRespawnTime : 50.0f; 
         m_strDescription.PrintF("Bag - M:%g  T:%g", m_fValue, m_fRespawnTime);
         // set appearance
         AddItem(MODEL_BAG, TEXTURE_BAG, TEXTURE_REFLECTION_LIGHTMETAL01, TEXTURE_SPECULAR_MEDIUM, 0);
         AddFlare(MODEL_FLARE, TEXTURE_FLARE, FLOAT3D(0,0.4f,0), FLOAT3D(2,2,0.4f) );
-        StretchItem(FLOAT3D(1.0f*0.75f, 1.0f*0.75f, 1.0f*0.75));
+        StretchItem(FLOAT3D(2.0f*0.75f, 2.0f*0.75f, 2.0f*0.75));
         m_iSoundComponent = SOUND_BAG;
         break;                                                                 // add flare
       case MIT_CHEST:
         StartModelAnim(ITEMHOLDER_ANIM_SMALLOSCILATION, AOF_LOOPING|AOF_NORESTART);
         ForceCollisionBoxIndexChange(ITEMHOLDER_COLLISION_BOX_MEDIUM);
-        m_fValue = 2500.0f;
-        m_fRespawnTime = (m_fCustomRespawnTime>0) ? m_fCustomRespawnTime : 25.0f; 
+        m_fValue = 50.0f;
+        m_fRespawnTime = (m_fCustomRespawnTime>0) ? m_fCustomRespawnTime : 125.0f; 
         m_strDescription.PrintF("Chest - M:%g  T:%g", m_fValue, m_fRespawnTime);
         // set appearance
         AddItem(MODEL_CHEST, TEXTURE_CHEST, TEXTURE_REFLECTION_LIGHTMETAL01, TEXTURE_SPECULAR_MEDIUM, 0);
         AddFlare(MODEL_FLARE, TEXTURE_FLARE, FLOAT3D(0,0.6f,0), FLOAT3D(2.5f,2.5f,0.5f) );
         StretchItem(FLOAT3D(1.5f*0.75f, 1.5f*0.75f, 1.5f*0.75));
         m_iSoundComponent = SOUND_CHEST;
+        break;
+	  case MIT_CUSTOM:
+        StartModelAnim(ITEMHOLDER_ANIM_SMALLOSCILATION, AOF_LOOPING|AOF_NORESTART);
+        ForceCollisionBoxIndexChange(ITEMHOLDER_COLLISION_BOX_MEDIUM);
+        m_fRespawnTime = (m_fCustomRespawnTime>0) ? m_fCustomRespawnTime : 20.0f; 
+        m_strDescription.PrintF("Custom - M:%g  T:%g", m_fValue, m_fRespawnTime);
+        // set appearance
+        AddItem(MODEL_BAG, TEXTURE_BAG, TEXTURE_REFLECTION_LIGHTMETAL01, TEXTURE_SPECULAR_MEDIUM, 0);
+        AddFlare(MODEL_FLARE, TEXTURE_FLARE, FLOAT3D(0,0.6f,0), FLOAT3D(2.5f,2.5f,0.5f) );
+        StretchItem(FLOAT3D(1.5f*0.75f, 1.5f*0.75f, 1.5f*0.75));
+        m_iSoundComponent = SOUND_BAG;
         break;
 
     }
@@ -160,6 +182,7 @@ procedures:
 
     // send money to entity
     EMoneyItem eMoney;
+	eMoney.bPredictor=IsPredictor();
     eMoney.iMoney = (INDEX)m_fValue;
     // if money is received
     if (epass.penOther->ReceiveItem(eMoney)) {
@@ -168,8 +191,8 @@ procedures:
       {
         switch (m_EhitType)
         {
-          case MIT_COIN:  IFeel_PlayEffect("PU_MoneyCoin"); break;
-          case MIT_BAG: IFeel_PlayEffect("PU_MoneyBag"); break;
+          case MIT_COIN: IFeel_PlayEffect("PU_MoneyCoin");  break;
+          case MIT_BAG:  IFeel_PlayEffect("PU_MoneyBag");   break;
           case MIT_CHEST:IFeel_PlayEffect("PU_MoneyChest"); break;
         }
       }
@@ -184,9 +207,25 @@ procedures:
   };
 
   Main() {
-    Initialize();     // initialize base class
+	Initialize();     // initialize base class
     SetProperties();  // set properties
+	SetCollisionFlags(ECF_ITEM_MONEY);
 
-    jump CItem::ItemLoop();
+    //jump CItem::ItemLoop();
+	if (!m_bDropped) {
+      jump CItem::ItemLoop();
+    } else if (TRUE) {
+      wait() {
+        on (EBegin) : {
+          SpawnReminder(this, m_fRespawnTime, 0);
+          call CItem::ItemLoop();
+        }
+        on (EReminder) : {
+          SendEvent(EEnd()); 
+          resume;
+        }
+      }
+    }
+
   };
 };

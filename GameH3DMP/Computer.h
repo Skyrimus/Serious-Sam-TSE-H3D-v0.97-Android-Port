@@ -13,23 +13,3 @@ You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. */
 
-#include <Engine/StdH.h>
-#include <Engine/Engine.h>
-#include <GameH3DMP/SessionProperties.h>
-#include <GameH3DMP/PlayerSettings.h>
-
-/* rcg10042001 protect against Visual C-isms. */
-#ifdef _MSC_VER
-#define DECL_DLL _declspec(dllexport)
-#endif
-
-#ifdef PLATFORM_UNIX
-#define DECL_DLL 
-#endif
-
-#include "../Global.h"
-#include "../Common/Flags.h"
-#include "../Common/Common.h"
-#include "../Common/Particles.h"
-#include "../Common/EmanatingParticles.h"
-#include "../Common/GameInterface.h"
