@@ -34,9 +34,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
   #include <Entities/Common/GameInterface.h>
   #include <Entities/Player.h>
 #else
-  #include <EntitiesMP/Global.h>
-  #include <EntitiesMP/Common/Common.h>
-  #include <EntitiesMP/Common/GameInterface.h>
-  #include <EntitiesMP/Player.h>
+  #include <EntitiesH3DMP/Global.h>
+  #include <EntitiesH3DMP/Common/Common.h>
+  #include <EntitiesH3DMP/Common/GameInterface.h>
+  #include <EntitiesH3DMP/Player.h>
 #endif
 #undef DECL_DLL

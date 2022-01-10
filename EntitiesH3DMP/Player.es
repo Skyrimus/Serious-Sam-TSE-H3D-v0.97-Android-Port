@@ -1,7 +1,6 @@
 401
 %{
 
-#include <EntitiesH3DMP/Common/playerCommons.h>
 #include "EntitiesH3DMP/StdH/StdH.h"
 #include "GameH3DMP/SEColors.h"
 
@@ -287,7 +286,7 @@ static void KillAllEnemies(CEntity *penKiller)
 //extern TIME _tmSnoopingStarted;
 //extern CEntity *_penTargeting;
 
-PlayerControls pctlCurrent;
+PlayerControls pctlCurrent = g_cb.g_IncomingControls;
 
 // cheats
 static INDEX cht_iGoToMarker = -1;
@@ -3195,6 +3194,27 @@ void InitAniNum() {
   {
     return iSound+m_iGender*GENDEROFFSET;
   }
+  
+  virtual void ReceiveRPC(CNetworkMessage &nmMessage)
+  {
+    INDEX iCommandID;
+    FLOAT fValue;
+
+    nmMessage >> iCommandID;
+    
+    if (iCommandID == 1 || iCommandID == 2)
+    {
+      nmMessage >> fValue;
+
+      if (iCommandID == 1) {
+        SetHealth(fValue);
+      } else {
+        SetArmor(fValue);
+      }
+    } 
+
+    //CPrintF("PLID %d received direct RPC!\n", GetMyPlayerIndex());
+  };
 
   void AddBouble( FLOAT3D vPos, FLOAT3D vSpeedRelative)
   {

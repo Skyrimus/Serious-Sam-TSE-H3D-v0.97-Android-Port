@@ -23,7 +23,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #ifdef FIRST_ENCOUNTER
 #include "Entities/Common/Particles.h"
 #else
-#include "EntitiesMP/Common/Particles.h"
+#include "EntitiesH3DMP/Common/Particles.h"
 #endif
 
 #include "Models/Enemies/Headman/Headman.h"
