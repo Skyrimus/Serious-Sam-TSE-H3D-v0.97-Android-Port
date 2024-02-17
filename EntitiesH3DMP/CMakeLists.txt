@@ -169,6 +169,8 @@ if (STATIC_LINKING)
 else ()
   add_library(EntitiesH3DMP SHARED ${SOURCES})
 endif ()
+
+target_compile_options(EntitiesH3DMP PUBLIC "-I${H3D_ROOT}")
 target_compile_options(EntitiesH3DMP PUBLIC "-I${CMAKE_CURRENT_SOURCE_DIR}")
 target_compile_options(EntitiesH3DMP PRIVATE "-I${CMAKE_CURRENT_SOURCE_DIR}/StdH")
 target_compile_options(EntitiesH3DMP PUBLIC "-I${SE_CURRENT_GENERATED_DIR}")
