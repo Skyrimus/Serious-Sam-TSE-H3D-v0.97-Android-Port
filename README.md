@@ -1,3 +1,1 @@
-# Mod_H3D_Android
-
-Rename clonned folder to H3D and put in Sources folder
+# Serious-Sam-TSE-H3D-v0.97-Android-Port
